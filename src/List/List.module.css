@@ -1,0 +1,115 @@
+.infoList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem 0 1.5rem;
+  gap: 16px;
+}
+.infoList h2 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.infoList h2:first-child {
+  color: var(--blue);
+}
+.infoList h2:last-child {
+  color: var(--purple);
+}
+.counter {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border: none;
+  border-radius: 999px;
+}
+.content ul {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+.content ul li {
+  padding: 1rem;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: auto auto 1.5rem;
+  align-items: flex-start;
+}
+.content ul li label {
+  position: relative;
+  padding: 0 0.75rem 0 2.25rem;
+  display: inline-block;
+  line-height: 1.4rem;
+}
+.content ul li label:before {
+  content: '';
+  width: 1.091rem;
+  height: 1.091rem;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.content ul li label:after {
+  content: '';
+  width: 0.457rem;
+  height: 0.293rem;
+  border: 2px solid var(--gray-100);
+  border-top: none;
+  border-right: none;
+  top: 0.42rem;
+  left: 0.41rem;
+  opacity: 0;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.content ul li input[type='checkbox'] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.content ul li input[type='checkbox']:checked + label:before {
+  background-color: var(--purple-dark);
+  border-color: var(--purple-dark);
+  text-decoration: line-through;
+}
+.content ul li input[type='checkbox']:checked + label {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+.content ul li input + label:hover:before {
+  background-color: var(--blue-dark);
+  border-color: var(--blue);
+}
+
+.content ul li input[type='checkbox']:checked + label:after {
+  opacity: 1;
+}
+.content button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  border: 0;
+  background-color: transparent;
+  color: var(--gray-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.content button:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}
