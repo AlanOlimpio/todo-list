@@ -1,6 +1,7 @@
 import { Trash } from 'phosphor-react';
 import Styled from './List.module.css';
 import { MouseEvent, useEffect, useState } from 'react';
+import EmptyState from '../EmptyState';
 interface TasksProps {
   id: string;
   label: string;
@@ -73,7 +74,8 @@ function List() {
           </span>
         </h2>
       </div>
-      {tasks.length > 0 && (
+
+      {tasks.length > 0 ? (
         <ul>
           {tasks.map((item) => {
             return (
@@ -105,6 +107,8 @@ function List() {
             );
           })}
         </ul>
+      ) : (
+        <EmptyState />
       )}
     </div>
   );
