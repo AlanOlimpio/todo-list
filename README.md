@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# to do list
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse aplicativo foi desenvolvido no curso <a href="https://app.rocketseat.com.br/journey/react-js-2022/overview" target="_blank">ReactJS</a> , é aplicação to-do list que era um desafio do curso, foi utilizando React, Vite e TypeScript .
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+|Figma| Local host|
+|-------|------|
+|<img src="screencapture-figma.png" alt="Figma" width="100%">|<img src="screencapture-local-host.png" alt="Local host" width="100%">|
 
-## Expanding the ESLint configuration
+|Figma empty| Local host empty|
+|-------|------|
+|<img src="screencapture-figma-empty.png" alt="Figma empty" width="100%">|<img src="screencapture-local-host-empty.png" alt="Local host empty" width="100%">|
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## 🔨 Funcionalidades do projeto
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Esse aplicativo exibe um to-do list onde é possível adicionar uma nova tarefa, marcar e desmarcar uma tarefa como concluída, remover uma tarefa da listagem e mostrar o progresso de conclusão das tarefas.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ✔️ Técnicas e tecnologias utilizadas
+
+Lista das bibliotecas utilizadas no desenvolvimento:
+
+- `React`
+- `react-dom`
+- `Vite`
+- `TypeScript`
+- `phosphor-react`
+
+## 🛠️ Abrir e rodar o projeto
+
+Dentro da pasta do projeto execute npm i ou yarn para instalar as dependências e npm run dev ou yarn dev para iniciar o projeto.
